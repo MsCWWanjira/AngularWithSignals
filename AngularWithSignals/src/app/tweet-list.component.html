@@ -1,0 +1,11 @@
+<div class="tweets-section">
+    <div class="tweet" *ngFor="let tweet of tweets">
+      <div class="tweet-content">
+        <div class="tweet-header">
+          <span class="tweet-name">{{ tweet.title }}</span>
+          <span class="tweet-time">1h</span>
+        </div>
+        <div class="tweet-text">{{ tweet.body }}</div>
+      </div>
+    </div>
+  </div>  

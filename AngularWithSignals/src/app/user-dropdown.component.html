@@ -1,0 +1,6 @@
+<div [formGroup]="userForm">
+  <label>Select user to see tweets</label>
+  <select formControlName="selectedUser" (change)="onUserChange()">
+    <option *ngFor="let user of users" [value]="user.id">{{ user.name }}</option>
+  </select>
+</div>
